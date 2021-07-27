@@ -409,6 +409,10 @@ header {
     position: relative;
     z-index: 2;
 }
+.portfolio-item-individual a{
+    color: inherit;
+    text-decoration: none;
+}
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
