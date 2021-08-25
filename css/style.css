@@ -420,6 +420,11 @@ header {
     opacity: .5;
 }
 
+.example_vid{
+    width: 100%;
+    height: auto;
+}
+
 
 /* footer */
 
