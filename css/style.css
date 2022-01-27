@@ -485,3 +485,12 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    width: 70%;
+}
