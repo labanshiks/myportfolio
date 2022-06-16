@@ -352,6 +352,22 @@ header {
   box-shadow: var(--bs);
 }
 
+.read-more-btn {
+  color: var(--clr-dark);
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.read-more-text {
+  display: none;
+}
+
+.read-more-text--show {
+  display: inline;
+}
+
 @media (min-width: 600px) {
   .about-me {
     display: grid;
