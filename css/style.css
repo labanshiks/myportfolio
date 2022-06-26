@@ -310,11 +310,11 @@ header {
 .section__title--services::after {
   content: "";
   display: block;
-  width: 3em;
+  width: 2em;
   height: 1px;
   margin: 0.5em auto 1em;
   background: currentColor;
-  opacity: 0.5;
+  opacity: 0.15;
 }
 
 .services {
@@ -326,9 +326,7 @@ header {
   margin: 0 auto;
 }
 
-.skill__list {
-  list-style: none;
-}
+
 
 @media (min-width: 800px) {
   .services {
