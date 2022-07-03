@@ -1,5 +1,6 @@
-## myportfolio
+# myportfolio
 
-This is basically a website that tells a potential employer everything they need to know about me.This ranges from my education, achievements to my skills.
+This is my portfolio website that shows a range of my skills and past works. The website was built with HTML, CSS and JavaScript.
 
-View the site hosted by netlify https://labanportfolio.netlify.app/
+## Link to the website
+https://labanportfolio.netlify.app/
