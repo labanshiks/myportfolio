@@ -32,7 +32,7 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hello, I am <strong>Laban Shikuku</strong>
+                Hello, I am <strong><span class="auto_input"></span></strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Full-stack web developer</p>
             <img src="img/shiks-05.jpg" alt="a picture of Laban smiling" class="intro__img">
@@ -163,7 +163,15 @@
             </ul>
         </footer>
         
-        
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto_input", {
+                strings: ["Laban^1000 Shikuku"],
+                startDelay: 2000,
+                typeSpeed:  150,
+                loop: false,
+            })
+        </script>
         <script src="js/index.js"></script>
         
     </body>
