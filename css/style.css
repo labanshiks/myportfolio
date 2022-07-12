@@ -90,12 +90,7 @@ strong {
   transform: scale(1.1);
 }
 
-button {
-  outline: none;
-  border: none;
-  width: 100%;
-  font-weight: var(--fw-bold);
-}
+
 
 /* Typography */
 
@@ -445,32 +440,41 @@ header {
 }
 
 
-
-.hero{
-  width: 100%;
-  height: 80vh;
+/*contact section*/
+.contact-me{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: var(--clr-light);
-  margin: 30px auto;
 }
 
 form{
   width: 90%;
-  max-width: 600px;
+  max-width: 1000px;
+  margin: 30px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .input-group{
+  flex-basis: 48%;
 }
 
 .input-group{
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   position: relative;
 }
 
 input, textarea{
   width: 100%;
   padding: 10px;
-  outline: 0;
-  border: 1px solid #fff;
+  color: var(--clr-dark);
+  border: 1px solid var(--clr-dark);
   background: transparent;
 }
 
@@ -480,9 +484,52 @@ label{
   left: 0;
   top: 0;
   padding: 10px;
-  color: #fff;
+  color: var(--clr-dark);
   cursor: text;
+  transition: 0.2s;
 }
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -41px;
+  font-size: 17px;
+}
+
+.submit-btn {
+  display: block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  border: none;
+  transition: transform 200ms ease-in-out;
+  margin: 10px auto;
+}
+
+.submit-btn:hover:hover {
+  transform: scale(1.1);
+}
+
+input[type="text"],
+input[type="email"],
+button[type="submit"],
+textarea{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+
+
+
+
 
 
 
