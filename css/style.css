@@ -497,6 +497,11 @@ textarea:valid~label{
   font-size: 17px;
 }
 
+.captcha {
+  display: block;
+  margin: 10px auto;
+}
+
 .submit-btn {
   display: block;
   padding: 0.5em 2.5em;
