@@ -124,26 +124,27 @@
 
         <section class="contact-me" id="contact">
             <h2 class="section__title section__title--contact">Contact me</h2>
-            <form>
+            <form method="POST" data-netlify="true">
                 <div class="row">
                     <div class="input-group">
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" name="name" required>
                         <label for="name"><i class="fas fa-user"></i> Your Name</label>
                     </div>
                     <div class="input-group">
-                        <input type="text" id="number" required>
+                        <input type="text" id="number" name="number" required>
                         <label for="number"><i class="fas fa-phone-alt"></i> Phone No.</label>
                     </div>
                 </div>
 
                 <div class="input-group">
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                     <label for="email"><i class="fas fa-envelope"></i> Email</label>
                 </div>
                 <div class="input-group">
-                    <textarea  id="message" rows="10" required></textarea>
+                    <textarea  id="message" name="message" rows="10" required></textarea>
                     <label for="message"><i class="fas fa-comment"></i> Your Message</label>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
                 <button class="submit-btn" type="submit">submit <i class="far fa-paper-plane"></i></button>
 
             </form>
