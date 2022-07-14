@@ -334,6 +334,26 @@ header {
   margin: 0 auto;
 }
 
+
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.service-list__item {
+  margin: 0.5em 0.8em;
+  width: 20%;
+}
+
+.skill{
+  display: block;
+}
+
 .buttons{
   margin: 0 auto;
 }
@@ -497,10 +517,7 @@ textarea:valid~label{
   font-size: 17px;
 }
 
-.captcha {
-  display: block;
-  margin: 10px auto;
-}
+
 
 .submit-btn {
   display: block;
