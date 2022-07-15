@@ -53,6 +53,7 @@ body {
 
 section {
   padding: 5em 2em;
+  margin-bottom: 10px;
 }
 
 img {
@@ -117,36 +118,7 @@ h3 {
   color: var(--clr-accent);
 }
 
-.section__title {
-  margin-bottom: 0.25em;
-}
 
-.section__title--intro {
-  font-weight: var(--fw-reg);
-}
-
-.section__title--intro strong {
-  display: block;
-}
-
-.section__subtitle {
-  margin: 0;
-  font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
-.section__subtitle--about {
-  background: var(--clr-accent);
-  padding: 0.25em 1em;
-  font-family: var(--ff-secondary);
-  margin-bottom: 1em;
-}
-
-.section__subtitle--work {
-  color: var(--clr-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
-}
 
 /* header */
 
@@ -263,8 +235,21 @@ header {
 .intro__img {
   box-shadow: var(--bs);
 }
+.title__intro {
+  margin-bottom: 0.25em;
+  font-weight: var(--fw-reg);
+}
 
-.section__subtitle--intro {
+.title__intro strong {
+  display: block;
+}
+
+.subtitle__intro {
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  font-size: var(--fs-h3);
   display: inline-block;
 }
 
@@ -287,7 +272,7 @@ header {
     z-index: 2;
   }
 
-  .section__subtitle--intro {
+  .subtitle__intro {
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
@@ -295,6 +280,7 @@ header {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+    
   }
 }
 
@@ -310,12 +296,13 @@ header {
   opacity: 0.85;
 }
 
-.section__title--services {
+.title__services {
+  margin-bottom: 0.25em;
   color: var(--clr-accent);
   position: relative;
 }
 
-.section__title--services::after {
+.title__services::after {
   content: "";
   display: block;
   width: 3em;
@@ -373,6 +360,23 @@ header {
   }
 }
 
+
+
+
+.title__about{
+  margin-bottom: 0.25em;
+}
+
+.subtitle__about{
+  margin: 0;
+  font-size: var(--fs-h3);
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  display: inline-block;
+
+}
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
@@ -395,11 +399,11 @@ header {
     grid-column-gap: 2em;
   }
 
-  .section__title--about {
+  .title__about {
     grid-area: title;
   }
 
-  .section__subtitle--about {
+  .subtitle--about {
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
@@ -422,6 +426,18 @@ header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+}
+
+.title__work{
+  margin-bottom: 0.25em;
+}
+
+.subtitle__work {
+  margin: 0;
+  font-size: var(--fs-h3);
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
 }
 
 .portfolio {
@@ -467,6 +483,10 @@ header {
   align-items: center;
   justify-content: center;
   background: var(--clr-light);
+}
+
+.title__contact{
+  margin-bottom: 0.25em;
 }
 
 form{

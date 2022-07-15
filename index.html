@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
         <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
         
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
     </head>
     <body>
@@ -31,17 +32,17 @@
         
         <!-- Introduction -->
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hello, I am <strong><span class="auto_input"></span></strong>
+            <h1 class="title__intro">
+                Hello, I am <strong>Laban Shikuku</strong><!--<strong><span class="auto_input"></span></strong>-->
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Full-stack web developer</p>
-            <img src="img/shiks-05.jpg" alt="a picture of Laban smiling" class="intro__img">
+            <p class="subtitle__intro">Full-stack web developer</p>
+            <img src="assets/img/shiks-05.jpg" alt="a picture of Laban smiling" class="intro__img">
         </section>
         
         
         <!-- My services -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">Skills & Services</h2>
+            <h2 class="title__services">Skills & Services</h2>
             <div class="services">
                 <div class="service">
                     <h3>1. Web Design + Development</h3>
@@ -97,10 +98,6 @@
                             <i class="fab fa-r-project"></i>
                             <div class="skill"><strong>R</strong></div>
                         </li>
-                        <li class="service-list__item">
-                            <i class="fas fa-file-excel"></i>
-                            <div class="skill"><strong>Excel</strong></div>
-                        </li>
                     </ul>
                     </p>
                     <p>
@@ -117,7 +114,7 @@
             
             <div class="buttons">
                 <a href="#work" class="btn">My Work</a>
-                <a download href="./resume/BrianLabanShikukuResume.pdf" class="btn" target="_blank">DOWNLOAD CV</a>
+                <a download href="assets/resume/BrianLabanShikuku_CV.pdf" class="btn" target="_blank">DOWNLOAD CV</a>
             </div>
 
 
@@ -126,8 +123,8 @@
         
         <!-- About me -->
         <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Full-stack web developer based in Kenya</p>
+            <h2 class="title__about">Who I am</h2>
+            <p class="subtitle__about">Full-stack web developer based in Kenya</p>
            
            <div class="about-me__body">
                <p>
@@ -139,38 +136,38 @@
                 I am passionate about the ever changing world of technology and make it my personal goal to keep expanding my knowledge in the field.
                </p>
             </div>
-           <img src="img/shiks-02.jpg" alt="Laban seated" class="about-me__img">
+           <img src="assets/img/shiks-02.jpg" alt="Laban seated" class="about-me__img">
         </section>
         
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            <h2 class="title__work">My work</h2>
+            <p class="subtitle__work">A selection of my range of work</p>
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
                 <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/shopping.jpg" alt="" class="portfolio__img">
+                    <img src="assets/img/shopping.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
                 <a href="portfolio-item-2.html" class="portfolio__item">
-                    <img src="img/preview.png" alt="" class="portfolio__img">
+                    <img src="assets/img/preview.png" alt="" class="portfolio__img">
                 </a>
                 <!-- Portfolio item 03 -->
                 <a href="portfolio-item-3.html" class="portfolio__item">
-                    <img src="img/preview-02.png" alt="" class="portfolio__img">
+                    <img src="assets/img/preview-02.png" alt="" class="portfolio__img">
                 </a>
                 <!-- Portfolio item 04 -->
                 <a href="portfolio-item-4.html" class="portfolio__item">
-                    <img src="img/preview-03.png" alt="" class="portfolio__img">
+                    <img src="assets/img/preview-03.png" alt="" class="portfolio__img">
                 </a>
         </section>
 
 
 
         <section class="contact-me" id="contact">
-            <h2 class="section__title section__title--contact">Contact me</h2>
+            <h2 class="title__contact">Contact me</h2>
             <form method="POST" data-netlify="true">
                 <div class="row">
                     <div class="input-group">
@@ -216,7 +213,7 @@
             </ul>
         </footer>
         
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
             var typed = new Typed(".auto_input", {
                 strings: ["Laban^1000 Shikuku"],
@@ -224,8 +221,24 @@
                 typeSpeed:  150,
                 loop: false,
             })
+        </script>-->
+        <script src="assets/js/index.js"></script>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script>
+            ScrollReveal({ 
+                reset: true,
+                distance: '60px',
+                duration: 500,
+                delay: 400 
+            });
+
+            ScrollReveal().reveal('.title__intro, .title__services, .title__about, .title__work, .title__contact',  { delay: 600, origin: "bottom" });
+            ScrollReveal().reveal('.subtitle__intro, .subtitle__about, .subtitle__work', { delay: 700, origin: "left" });
+            ScrollReveal().reveal('.intro__img, .about-me__img', { delay: 800, origin: "top" });
+            ScrollReveal().reveal('.about-me__body', { delay: 700, origin: "left" });
+
         </script>
-        <script src="js/index.js"></script>
         
     </body>
 </html>
