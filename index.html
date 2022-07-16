@@ -21,7 +21,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="#home" class="nav__link active-link"></a>
                         </li>
                         <li class="nav__item">
                             <a href="#services" class="nav__link">Services</a>
@@ -32,14 +32,15 @@
                         <li class="nav__item">
                             <a href="#work" class="nav__link">Work</a>
                         </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
                     </ul>
                     <i class="far fa-window-close nav__close" id="nav-close"></i>
                 </div>
-                <div class="bars">
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>   
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>  
             </nav>
         </header>
         
@@ -233,23 +234,7 @@
         </script>-->
         <script src="assets/js/index.js"></script>
 
-        <!--=============== SCROLL REVEAL===============-->
-        <script>
-            ScrollReveal({ 
-                reset: true,
-                distance: '60px',
-                duration: 500,
-                delay: 400 
-            });
 
-            ScrollReveal().reveal('.title__intro, .title__services, .title__about, .title__work, .title__contact, .service-list__item',  { delay: 600, origin: "bottom" });
-            ScrollReveal().reveal('.subtitle__intro, .subtitle__about, .subtitle__work, .buttons, .submit-btn', { delay: 700, origin: "left" });
-            ScrollReveal().reveal('.intro__img, .about-me__img', { delay: 800, origin: "top" });
-            ScrollReveal().reveal('.about-me__body', { delay: 700, origin: "left" });
-            ScrollReveal().reveal('.service-list__item', { delay: 600, origin: "bottom", interval: 200 });
-
-
-        </script>
         
     </body>
 </html>

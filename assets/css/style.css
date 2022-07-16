@@ -53,7 +53,6 @@ body {
 
 section {
   padding: 5em 2em;
-  margin-bottom: 10px;
 }
 
 img {
@@ -211,16 +210,16 @@ a {
 
   .nav__toggle {
     color: var(--clr-accent);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
   .nav__menu {
     position: fixed;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 80%;
     height: 100%;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
     padding: 3rem;
@@ -234,7 +233,7 @@ a {
   }
 
   .nav__link {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     font-weight: var(--fw-bold);
     text-transform: uppercase;
   }
@@ -244,7 +243,7 @@ a {
     top: .75rem;
     right: 1rem;
     font-size: 1.5rem;
-    color: var(--clr-light);
+    color: var(--clr-accent);
     cursor: pointer;
   }
 
@@ -289,7 +288,7 @@ a {
   .intro {
     display: grid;
     width: min-content;
-    margin: 0 auto;
+    margin: 5.5rem auto;
     grid-column-gap: 1em;
     grid-template-areas:
       "img title"
