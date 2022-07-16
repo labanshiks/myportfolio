@@ -138,24 +138,15 @@ a {
   left: 0;
   z-index: 100;
   background-color: var(--clr-light);
+  padding: 0 2em;
 }
 
 /*=============== NAV ===============*/
 .nav {
-  height: 4.5rem;
+  height: 5.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-}
-
-.logo {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.nav__logo {
-  color: var(--clr-dark);
-  font-weight: var(--fw-bold);
 }
 
 .nav__menu {
@@ -180,8 +171,8 @@ a {
   color: var(--clr-accent);
 }
 
-.nav__toggle,
-.nav__close {
+#nav-toggle,
+#nav-close {
   display: none;
 }
 
@@ -201,17 +192,32 @@ a {
   background-color: var(--clr-dark);
 }
 
+/* Change background header */
+.scroll-header {
+  background-color: var(--clr-light);
+  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+}
 
 
-/*
-@media screen and (min-width: 767px) {
+@media (max-width: 600px) {
   .nav {
     height: 3rem;
   }
 
+  #nav-toggle,
+  #nav-close {
+    display: block;
+  }
+
+  .nav__toggle {
+    color: var(--clr-accent);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
   .nav__menu {
     position: fixed;
-    background-color: var(--clr-accent);
+    background-color: var(--clr-dark);
     top: 0;
     right: -100%;
     width: 70%;
@@ -221,16 +227,6 @@ a {
     transition: .4s;
   }
 
-  .nav__logo {
-    font-weight: var(--fw-reg);
-  }
-
-  .nav__toggle {
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: var(--clr-dark);
-  }
-
   .nav__list {
     display: flex;
     flex-direction: column;
@@ -238,13 +234,9 @@ a {
   }
 
   .nav__link {
-    color: var(--clr-light);
+    color: var(--clr-accent);
     font-weight: var(--fw-bold);
     text-transform: uppercase;
-  }
-
-  .nav__link:hover {
-    color: var(--clr-accent);
   }
 
   .nav__close {
@@ -252,26 +244,19 @@ a {
     top: .75rem;
     right: 1rem;
     font-size: 1.5rem;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     cursor: pointer;
   }
 
   .show-menu {
     right: 0;
   }
-}
-*/
-
-/* Change background header */
-.scroll-header {
-  background-color: var(--clr-light);
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+    
+  .scroll-header .nav__toggle {
+      color: var(--clr-accent);
+    }
 }
 
-.scroll-header .nav__logo,
-.scroll-header .nav__toggle {
-  color: var(--clr-accent);
-}
 
 /*  Intro section  */
 
