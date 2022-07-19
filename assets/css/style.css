@@ -206,6 +206,7 @@ a {
   #nav-toggle,
   #nav-close {
     display: block;
+    font-size: 2rem;
   }
 
   .nav__toggle {
@@ -457,6 +458,7 @@ a {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  align-items: center;
 }
 
 .title__work{
@@ -474,6 +476,15 @@ a {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  margin: 2em 0;
+  box-shadow: -1px 0 4px rgba(10, 24, 27, 0.5);
+}
+
+@media (max-width: 30.625em) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
 }
 
 .portfolio__item {
@@ -483,6 +494,8 @@ a {
 
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  width: 100%;
+  object-fit: cover;
 }
 
 .portfolio__item:focus {
@@ -499,6 +512,38 @@ a {
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.5;
+}
+
+.card-info{
+  margin-top: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.card-list__link:hover {
+  opacity: 0.7;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.card-list__item {
+  margin: 0 0.5em;
+}
+
+.card-list__link {
+  padding: 0.5em;
+}
+
+.card-list__item a {
+  color: var(--clr-accent);
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 .example_vid {

@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laban's Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
-    />
 
-    <!-- Update these with your own fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <!-- to make the website responsive on all devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laban's Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
+  <!-- Update these with your own fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a>
+            <a href="index.html#home" class="nav__link active-link"></a>
           </li>
           <li class="nav__item">
             <a href="index.html#services" class="nav__link">Services</a>
@@ -42,38 +35,33 @@
           <li class="nav__item">
             <a href="index.html#work" class="nav__link">Work</a>
           </li>
+          <li class="nav__item">
+            <a href="index.html#contact" class="nav__link">Contact</a>
+          </li>
         </ul>
-      </nav>
-    </header>
+        <i class="far fa-window-close nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
 
     <section class="intro">
-      <h1 class="section__title section__title--intro">
-        <strong>E-Commerce</strong>
+      <h1 class="title__intro">
+        <strong>ANIMEFLIX</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        A responsive shopping website
+      <p class="subtitle__intro">
+        A Full-stack Netflix clone
       </p>
-      <img src="img/shopping.jpg" alt="" class="intro__img" />
+      <img src="assets/img/animeflix.png" alt="" class="intro__img" />
     </section>
 
     <div class="portfolio-item-individual">
       <p>
-        This is a responsive E-Commerce website I built using
-        <strong>HTML, CSS</strong> and <strong>JavaScript</strong>.
-      </p>
-      <p>The video below gives you an overview of the website.</p>
-      <p>
-        <video
-          width="100%"
-          controls
-          src="img/example.mp4"
-          class="example_vid"
-        ></video>
-      </p>
-      <p>
-        <a href="https://github.com/labanshiks/sportswear-site"
-          >Click here to see the code on my github</a
-        >
+        This is a content streaming website I built using
+        <strong>MERN</strong> Stack i.e <strong>MongoDB</strong>, <strong>ExpressJS</strong>, <strong>REACT</strong>
+        and <strong>NodeJs</strong>.
       </p>
     </div>
 
