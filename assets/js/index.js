@@ -62,17 +62,17 @@ window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL===============*/
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: '60px',
   duration: 500,
   delay: 400
 });
 
-ScrollReveal().reveal('.title__intro, .title__services, .title__about, .title__work, .title__contact, .service-list__item', { delay: 600, origin: "bottom" });
+ScrollReveal().reveal('.title__intro, .title__services, .title__about, .title__work, .title__contact, .service-list__item, .footer__link', { delay: 600, origin: "bottom" });
 ScrollReveal().reveal('.subtitle__intro, .subtitle__about, .subtitle__work, .services, .buttons, .submit-btn', { delay: 700, origin: "left" });
 ScrollReveal().reveal('.intro__img, .about-me__img', { delay: 800, origin: "top" });
-ScrollReveal().reveal('.about-me__body', { delay: 700, origin: "left" });
-ScrollReveal().reveal('.service-list__item', { delay: 600, origin: "bottom", interval: 200 });
+ScrollReveal().reveal('.about-me__body, .portfolio-about__body', { delay: 700, origin: "left" });
+ScrollReveal().reveal('.service-list__item, .social-list__link', { delay: 600, origin: "bottom", interval: 200 });
 
 
 /*==== AUTOTYPE  ===== */

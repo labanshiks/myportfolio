@@ -548,6 +548,7 @@ a {
 
 
 /*contact section*/
+
 .contact-me{
   display: flex;
   flex-direction: column;
@@ -640,6 +641,7 @@ textarea{
 }
 
 
+/* individual portfolio */
 
 .portfolio-about {
   max-width: 1000px;
@@ -653,7 +655,7 @@ textarea{
 
 
 @media (min-width: 600px) {
-  .about-me {
+  .portfolio-about {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-areas:
@@ -661,20 +663,6 @@ textarea{
       "subtitle img"
       "text img";
     grid-column-gap: 2em;
-  }
-
-  .title__about {
-    grid-area: title;
-  }
-
-  .subtitle--about {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    position: relative;
-    left: -1em;
-    width: calc(100% + 2em);
-    padding-left: 1em;
-    padding-right: calc(200px + 4em);
   }
 
   .about-me__img {
