@@ -74,13 +74,3 @@ ScrollReveal().reveal('.intro__img, .about-me__img', { delay: 800, origin: "top"
 ScrollReveal().reveal('.about-me__body, .portfolio-about__body', { delay: 700, origin: "left" });
 ScrollReveal().reveal('.service-list__item, .social-list__link', { delay: 600, origin: "bottom", interval: 200 });
 
-
-/*==== AUTOTYPE  ===== */
-/*<script>
-  var typed = new Typed(".auto_input", {
-    strings: ["Laban^1000 Shikuku"],
-      startDelay: 1500,
-      typeSpeed:  150,
-      loop: false,
-  })
-  </script> */
