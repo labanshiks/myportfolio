@@ -74,3 +74,22 @@ ScrollReveal().reveal('.intro__img, .about-me__img', { delay: 800, origin: "top"
 ScrollReveal().reveal('.about-me__body, .portfolio-about__body, .portfolio', { delay: 700, origin: "left" });
 ScrollReveal().reveal('.service-list__item, .social-list__link', { delay: 600, origin: "bottom", interval: 200 });
 
+
+/*==================== SHOW SCROLL UP ====================*/
+function scrollUp() {
+  const scrollUp = document.getElementById('scroll-up');
+  // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+
+  // < !--< script src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12" ></script >
+  //   <script>
+  //     var typed = new Typed(".auto_input", {
+  //       strings: ["Laban^1000 Shikuku"],
+  //     startDelay: 1500,
+  //     typeSpeed:  150,
+  //     loop: false,
+  //           })
+  //   </script>-->

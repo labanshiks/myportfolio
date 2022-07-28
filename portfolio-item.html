@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- to make the website responsive on all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laban's Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <!-- to make the website responsive on all devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laban's Portfolio Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- Update these with your own fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-  <header class="header" id="header">
-    <nav class="nav container">
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html#home" class="nav__link active-link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#services" class="nav__link">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#work" class="nav__link">Work</a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#contact" class="nav__link"></a>
-          </li>
-        </ul>
-        <i class="far fa-window-close nav__close" id="nav-close"></i>
-      </div>
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
-  </header>
-
-    <section class="intro">
-      <h1 class="title__intro">
-        <strong>ANIMEFLIX</strong>
-      </h1>
-      <p class="subtitle__intro">
-        A MERN-stack Netflix clone
-      </p>
-      <img src="assets/img/animeflix.png" alt="" class="intro__img" />
-    </section>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
 
     <!-- About me -->
-    <section class="portfolio-about" id="about">
-        
-      <div class="portfolio-about__body">
+    <section class="about-me" id="about">
+      <h2 class="title__about">MovieHub</h2>
+      <p class="subtitle__about">MERN-stack application</p>
+
+      <div class="about-me__body">
         <p>
-          This is a fully responsive content streaming website similar to Netflix I created using 
-          <strong>MongoDB</strong>, <strong>ExpressJS</strong>, <strong>REACT</strong> and <strong>NodeJs</strong>.
-          I have been active in the field of web design and development for over 3 years. In this time, I have acquired
-          a wealth of skills and experience working as an intern, taking side courses and creating personal projects.
+          This is a fully responsive content streaming website similar to
+          Netflix I created using
+          <strong>MongoDB</strong>, <strong>ExpressJS</strong>,
+          <strong>REACT</strong> and <strong>NodeJs</strong>. I have been active
+          in the field of web design and development for over 3 years. In this
+          time, I have acquired a wealth of skills and experience working as an
+          intern, taking side courses and creating personal projects.
         </p>
         <p>
-              Currently, I am a 5th year student pursuing a Bachelor of Science in Electrical and Electronics Engineering at the
-              University of Nairobi.
-              I am passionate about the ever changing world of technology and make it my personal goal to keep expanding my
-              knowledge in the field.
+          Currently, I am a 5th year student pursuing a Bachelor of Science in
+          Electrical and Electronics Engineering at the University of Nairobi. I
+          am passionate about the ever changing world of technology and make it
+          my personal goal to keep expanding my knowledge in the field.
         </p>
       </div>
-      <img src="assets/img/shiks-02.jpg" alt="Laban seated" class="about-me__img">
+      <img
+        src="assets/img/shiks-02.jpg"
+        alt="Laban seated"
+        class="about-me__img"
+      />
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <!-- replace with your own email address -->
-      <a href="mailto: shikslaban@gmail.com" class="footer__link">shikslaban@gmail.com</a>
+      <a href="mailto: shikslaban@gmail.com" class="footer__link"
+        >shikslaban@gmail.com</a
+      >
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.linkedin.com/in/laban-shikuku/">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/laban-shikuku/"
+          >
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>

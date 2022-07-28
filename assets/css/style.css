@@ -144,7 +144,7 @@ a {
 .nav {
   height: 5.5rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -158,6 +158,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   column-gap: 4rem;
+  padding: 0px;
 }
 
 .nav__link {
@@ -201,6 +202,7 @@ a {
 @media (max-width: 600px) {
   .nav {
     height: 3rem;
+    justify-content: flex-end;
   }
 
   #nav-toggle,
@@ -320,12 +322,9 @@ a {
 
 .my-services {
   background-color: var(--clr-light);
-  background-image: url(../img/services-bg.jpg);
-  background-size: cover;
-  background-blend-mode: multiply;
-  color: var(--clr-dark);
+  background: var(--clr-dark);
+  color: var(--clr-light);
   text-align: center;
-  opacity: 0.85;
 }
 
 .title__services {
@@ -682,9 +681,52 @@ textarea{
   padding: 0.5em;
 }
 
-/* Individual portfolio item styles */
 
-.portfolio-about {
+/*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -20%;
+  background-color: var(--clr-light);
+  padding: 0.5rem;
+  display: flex;
+  opacity: 0.9;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  background-color: var(--clr-accent);
+  opacity: 1;
+}
+
+.scrollup__icon {
+  color: var(--clr-dark);
+  font-size: 1.5rem;
+}
+
+/* Show scroll */
+.show-scroll {
+  bottom: 5rem;
+}
+
+/* Individual portfolio item styles */
+.title__about {
+  margin-bottom: 0.25em;
+}
+
+.subtitle__about {
+  margin: 0;
+  font-size: var(--fs-h3);
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  display: inline-block;
+
+}
+
+.about-me {
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -693,10 +735,8 @@ textarea{
   box-shadow: var(--bs);
 }
 
-
-
 @media (min-width: 600px) {
-  .portfolio-about {
+  .about-me {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-areas:
@@ -706,12 +746,27 @@ textarea{
     grid-column-gap: 2em;
   }
 
+  .title__about {
+    grid-area: title;
+  }
+
+  .subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
   .about-me__img {
     grid-area: img;
     position: relative;
     z-index: 2;
   }
 }
+
     
 
 
