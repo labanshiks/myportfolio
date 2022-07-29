@@ -135,7 +135,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   background-color: var(--clr-light);
   padding: 0 2em;
 }
@@ -475,7 +475,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 20px;
   margin: 2em 0;
-  box-shadow: -1px 0 4px rgba(10, 24, 27, 0.5);
+  box-shadow: var(--bs);
 }
 
 @media (max-width: 30.625em) {
@@ -731,8 +731,9 @@ textarea{
   margin: 0 auto;
 }
 
-.about-me__img {
+.example__img {
   box-shadow: var(--bs);
+  margin: auto;
 }
 
 @media (min-width: 600px) {
@@ -760,7 +761,7 @@ textarea{
     padding-right: calc(200px + 4em);
   }
 
-  .about-me__img {
+  .example__img {
     grid-area: img;
     position: relative;
     z-index: 2;

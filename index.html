@@ -1,242 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Laban's Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laban's Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
 
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">Work</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                    <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
-                </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </div>  
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="title__intro">
-                Hello, I am <strong>Laban Shikuku</strong>
-            </h1>
-            <p class="subtitle__intro">software developer</p>
-            <img src="assets/img/shiks-05.jpg" alt="a picture of Laban smiling" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="title__services">Skills & Services</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>1. Web Design + Development</h3>
-                    <p>
-                        - I build fully responsive websites using programming languages such as
-                        <ul class="service-list">
-                            <li class="service-list__item">
-                                <i class="fa-brands fa-html5"></i>
-                                <div class="skill"><strong>HTML</strong></div>
-                            </li>
-                            <li class="service-list__item">
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <div class="skill"><strong>CSS</strong></div>
-                            </li>
-                            <li class="service-list__item">
-                                <i class="fa-brands fa-js"></i>
-                                <div class="skill"><strong>JavaScript</strong></div>
-                            </li>
-                            <li class="service-list__item">
-                                <i class="fa-brands fa-react"></i>
-                                <div class="skill"><strong>REACT</strong></div>
-                            </li>
-                            <li class="service-list__item">
-                                <i class="fa-brands fa-node-js"></i>
-                                <div class="skill"><strong>NodeJs</strong></div>
-                            </li>
-                            <li class="service-list__item">
-                                <i class="fa-brands fa-wordpress"></i>
-                                <div class="skill"><strong>WORDPRESS</strong></div>
-                            </li>
-                        </ul>
-                    </p>
-                    <p>
-                        - I also have experience in back-end development working with 
-                         <strong>Node.js</strong> and <strong> npm </strong>to build Full-stack web applications with <strong>Express</strong> and <strong>MongoDB</strong> frameworks.
-                    </p>
-                </div> 
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="title__intro">Hello, I am <strong>Laban Shikuku</strong></h1>
+      <p class="subtitle__intro">software developer</p>
+      <img
+        src="assets/img/shiks-05.jpg"
+        alt="a picture of Laban smiling"
+        class="intro__img"
+      />
+    </section>
 
-                <div class="service">
-                    <h3>2. Data Analytics</h3>
-                    <p>
-                        - Working with data analysis tools such as 
-                    <ul class="service-list">
-                        <li class="service-list__item">
-                            <i class="fa-solid fa-database"></i>
-                            <div class="skill"><strong>SQL</strong></div>
-                        </li>
-                        <li class="service-list__item">
-                            <i class="fa-brands fa-python"></i>
-                            <div class="skill"><strong>Python</strong></div>
-                        </li>
-                        <li class="service-list__item">
-                            <i class="fa-brands fa-r-project"></i>
-                            <div class="skill"><strong>R</strong></div>
-                        </li>
-                    </ul>
-                    </p>
-                    <p>
-                        to create comprehensive analysis and create eye-catching visualizations.
-                    </p>
-                    <br>
-                    <h3>3. UI/UX Design</h3>
-                    <p>
-                        Skilled in creating modern responsive and interactive interfaces using
-                        <strong>Figma</strong>, <strong>Webflow</strong> and <strong>Adobe XD</strong>.
-                    </p>
-                </div>
-            </div> 
-            
-            <div class="buttons">
-                <a href="#work" class="btn">My Work</a>
-                <a download href="assets/resume/BrianLabanShikuku_CV.pdf" class="btn">DOWNLOAD CV</a>
-            </div>
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="title__services">Skills & Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>1. Web Design + Development</h3>
+          <ul class="service-list">
+            <li class="service-list__item">
+              <i class="fa-brands fa-html5"></i>
+              <div class="skill"><strong>HTML</strong></div>
+            </li>
+            <li class="service-list__item">
+              <i class="fa-brands fa-css3-alt"></i>
+              <div class="skill"><strong>CSS</strong></div>
+            </li>
+            <li class="service-list__item">
+              <i class="fa-brands fa-js"></i>
+              <div class="skill"><strong>JavaScript</strong></div>
+            </li>
+            <li class="service-list__item">
+              <i class="fa-brands fa-react"></i>
+              <div class="skill"><strong>REACT</strong></div>
+            </li>
+            <li class="service-list__item">
+              <i class="fa-brands fa-node-js"></i>
+              <div class="skill"><strong>NodeJs</strong></div>
+            </li>
+            <li class="service-list__item">
+              <i class="fa-brands fa-wordpress"></i>
+              <div class="skill"><strong>WORDPRESS</strong></div>
+            </li>
+          </ul>
+        </div>
 
+        <div class="service">
+          <h3>2. Data Analytics</h3>
+          <ul class="service-list">
+            <li class="service-list__item">
+              <i class="fa-solid fa-database"></i>
+              <div class="skill"><strong>SQL</strong></div>
+            </li>
+            <li class="service-list__item">
+              <i class="fa-brands fa-python"></i>
+              <div class="skill"><strong>Python</strong></div>
+            </li>
+            <li class="service-list__item">
+              <i class="fa-brands fa-r-project"></i>
+              <div class="skill"><strong>R</strong></div>
+            </li>
+          </ul>
+          <br />
+          <h3>3. UI/UX Design</h3>
+          <p>
+            Skilled in creating modern responsive and interactive interfaces
+            using
+            <strong>Figma</strong>, <strong>Webflow</strong> and
+            <strong>Adobe XD</strong>.
+          </p>
+        </div>
+      </div>
 
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-            <h2 class="title__about">Who I am</h2>
-            <p class="subtitle__about">software developer based in Kenya</p>
-           
-           <div class="about-me__body">
-               <p>
-                I have been active in the field of web design and development for over 3 years. In this time, I have acquired
-                a wealth of skills and experience working as an intern, taking side courses and creating personal projects. 
-               </p>
-               <p>
-                Currently, I am a 5th year student pursuing a Bachelor of Science in Electrical and Electronics Engineering at the University of Nairobi.
-                I am passionate about the ever changing world of technology and make it my personal goal to keep expanding my knowledge in the field.
-               </p>
-            </div>
-           <img src="assets/img/shiks-02.jpg" alt="Laban seated" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="title__work">My work</h2>
-            <p class="subtitle__work">A selection of my range of work</p>
-            <!-- Portfolio item 01 -->
-            <div class="portfolio">
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="assets/img/animeflix.png" alt="" class="portfolio__img">
-                </a>
-                <div class="card-info">
-                    <h2><span>Netflix clone</span></h2>
-                    <p><span>An content streaming website similar to Netflix built using 
-                        MERN Stack technology. The front end application was built using REACT.
-                        The back-end utilized a Rest API built from scratch integrated with MongoDB and NodeJs.
-                    </span>
-                    </p>
-                    <ul class="card-list">
-                        <li class="card-list__item">
-                            <a class="card-list__link" href="https://github.com/labanshiks/ANIMEFLIX" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="portfolio-item.html" class="btn">Read more</a>
-                </div>
-            </div> 
-        </section>
+      <div class="buttons">
+        <a href="#work" class="btn">My Work</a>
+        <a download href="assets/resume/BrianLabanShikuku_CV.pdf" class="btn"
+          >DOWNLOAD CV</a
+        >
+      </div>
+    </section>
 
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="title__about">Who I am</h2>
+      <p class="subtitle__about">software developer based in Kenya</p>
 
+      <div class="about-me__body">
+        <p>
+          I have been active in the field of web design and development for over
+          3 years. In this time, I have acquired a wealth of skills and
+          experience working as an intern, taking side courses and creating
+          personal projects.
+        </p>
+        <p>
+          Currently, I am a 5th year student pursuing a Bachelor of Science in
+          Electrical and Electronics Engineering at the University of Nairobi. I
+          am passionate about the ever changing world of technology and make it
+          my personal goal to keep expanding my knowledge in the field.
+        </p>
+      </div>
+      <img
+        src="assets/img/shiks-02.jpg"
+        alt="Laban seated"
+        class="about-me__img"
+      />
+    </section>
 
-        <section class="contact-me" id="contact">
-            <h2 class="title__contact">Contact me</h2>
-            <form method="POST" data-netlify="true">
-                <div class="row">
-                    <div class="input-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name"><i class="fas fa-user"></i> Your Name</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="text" id="number" name="number" required>
-                        <label for="number"><i class="fas fa-phone-alt"></i> Phone No.</label>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <input type="email" id="email" name="email" required>
-                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                </div>
-                <div class="input-group">
-                    <textarea  id="message" name="message" rows="10" required></textarea>
-                    <label for="message"><i class="fas fa-comment"></i> Your Message</label>
-                </div>
-                <div data-netlify-recaptcha="true"></div>
-                <button class="submit-btn" type="submit">submit <i class="fa-solid fa-paper-plane"></i></button>
-
-            </form>
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto: shikslaban@gmail.com" class="footer__link">shikslaban@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/laban-shikuku/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/labanshiks">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        
-
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="title__work">My work</h2>
+      <p class="subtitle__work">A selection of my range of work</p>
+      <!-- Portfolio item 01 -->
+      <div class="portfolio">
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="assets/img/animeflix.png" alt="" class="portfolio__img" />
         </a>
-        <script src="assets/js/index.js"></script>
+        <div class="card-info">
+          <h2><span>Netflix clone</span></h2>
+          <p>
+            <span
+              >An online movie viewing website similar to Netflix built with
+              MERN stack technology. The front end application was built using
+              REACT. The back-end utilized a Rest API built from scratch
+              integrated with MongoDB and NodeJs.
+            </span>
+          </p>
+          <ul class="card-list">
+            <li class="card-list__item">
+              <a
+                class="card-list__link"
+                href="https://github.com/labanshiks/ANIMEFLIX"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="portfolio-item.html" class="btn">Read more</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact-me" id="contact">
+      <h2 class="title__contact">Contact me</h2>
+      <form method="POST" data-netlify="true">
+        <div class="row">
+          <div class="input-group">
+            <input type="text" id="name" name="name" required />
+            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="number" name="number" required />
+            <label for="number"
+              ><i class="fas fa-phone-alt"></i> Phone No.</label
+            >
+          </div>
+        </div>
 
-        
-    </body>
+        <div class="input-group">
+          <input type="email" id="email" name="email" required />
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+        </div>
+        <div class="input-group">
+          <textarea id="message" name="message" rows="10" required></textarea>
+          <label for="message"
+            ><i class="fas fa-comment"></i> Your Message</label
+          >
+        </div>
+        <div data-netlify-recaptcha="true"></div>
+        <button class="submit-btn" type="submit">
+          submit <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto: shikslaban@gmail.com" class="footer__link"
+        >shikslaban@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/laban-shikuku/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/labanshiks">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
