@@ -74,6 +74,35 @@ ScrollReveal().reveal('.intro__img, .about-me__img, .example__img', { delay: 800
 ScrollReveal().reveal('.about-me__body, .portfolio-about__body, .portfolio', { delay: 700, origin: "left" });
 ScrollReveal().reveal('.service, .social-list__link', { delay: 600, origin: "bottom", interval: 200 });
 
+/*=============== ACCORDION===============*/
+
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+
+
+    const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+    if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+      currentlyActiveAccordionItemHeader.classList.toggle("active");
+      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+
+  });
+});
+
+
+
+
 
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
