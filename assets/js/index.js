@@ -72,7 +72,7 @@ ScrollReveal().reveal('.title__intro, .title__services, .title__about, .title__w
 ScrollReveal().reveal('.subtitle__intro, .subtitle__about, .subtitle__work,  .buttons, .submit-btn', { delay: 700, origin: "left" });
 ScrollReveal().reveal('.intro__img, .about-me__img, .example__img', { delay: 800, origin: "top" });
 ScrollReveal().reveal('.about-me__body, .portfolio-about__body, .portfolio', { delay: 700, origin: "left" });
-ScrollReveal().reveal('.service, .social-list__link', { delay: 600, origin: "bottom", interval: 200 });
+ScrollReveal().reveal('.accordion-item, .social-list__link', { delay: 600, origin: "bottom", interval: 200 });
 
 /*=============== ACCORDION===============*/
 
