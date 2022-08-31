@@ -91,8 +91,6 @@ strong {
   transform: scale(1.1);
 }
 
-
-
 /* Typography */
 
 h1,
@@ -114,7 +112,7 @@ h3 {
   font-size: var(--fs-h3);
 }
 
-.links{
+.links {
   color: var(--clr-accent);
 }
 
@@ -125,8 +123,6 @@ ul {
 a {
   text-decoration: none;
 }
-
-
 
 /* header */
 
@@ -199,7 +195,6 @@ a {
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
-
 @media (max-width: 600px) {
   .nav {
     height: 3rem;
@@ -227,7 +222,7 @@ a {
     height: 100%;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
     padding: 3rem;
-    transition: .4s;
+    transition: 0.4s;
   }
 
   .nav__list {
@@ -244,7 +239,7 @@ a {
 
   .nav__close {
     position: absolute;
-    top: .75rem;
+    top: 0.75rem;
     right: 1rem;
     font-size: 1.5rem;
     color: var(--clr-accent);
@@ -254,12 +249,11 @@ a {
   .show-menu {
     right: 0;
   }
-    
-  .scroll-header .nav__toggle {
-      color: var(--clr-accent);
-    }
-}
 
+  .scroll-header .nav__toggle {
+    color: var(--clr-accent);
+  }
+}
 
 /*  Intro section  */
 
@@ -315,7 +309,6 @@ a {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
-    
   }
 }
 
@@ -373,7 +366,13 @@ a {
   padding: 1rem;
   line-height: 1.5rem;
   border-top: 1px solid;
-  border-image: linear-gradient(to right, transparent, var(--clr-light), transparent) 1;
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--clr-light),
+      transparent
+    )
+    1;
   font-weight: var(--fs-body);
 }
 
@@ -405,7 +404,6 @@ a {
   border-radius: 5px;
 }
 
-
 .service-list {
   list-style: none;
   display: flex;
@@ -421,15 +419,13 @@ a {
   width: 20%;
 }
 
-.skill{
+.skill {
   display: block;
 }
 
-.buttons{
+.buttons {
   margin: 0 auto;
 }
-
-
 
 @media (min-width: 800px) {
   .services {
@@ -444,14 +440,13 @@ a {
   }
 }
 
-
 /* About Me */
 
-.title__about{
+.title__about {
   margin-bottom: 0.25em;
 }
 
-.subtitle__about{
+.subtitle__about {
   margin: 0;
   font-size: var(--fs-h3);
   background: var(--clr-accent);
@@ -459,7 +454,6 @@ a {
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   display: inline-block;
-
 }
 .about-me {
   max-width: 1000px;
@@ -511,7 +505,7 @@ a {
   align-items: center;
 }
 
-.title__work{
+.title__work {
   margin-bottom: 0.25em;
 }
 
@@ -528,8 +522,6 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 20px;
   margin: 2em 0;
-  box-shadow: var(--bs);
-  border-radius: 5px;
 }
 
 @media (max-width: 30.625em) {
@@ -541,10 +533,11 @@ a {
 .portfolio__item {
   background: var(--clr-dark);
   overflow: hidden;
+  box-shadow: var(--bs);
+  border-radius: 5px;
 }
 
 .portfolio__img {
-  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
   width: 100%;
   object-fit: cover;
 }
@@ -559,13 +552,7 @@ a {
   text-decoration: none;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-  transform: scale(1.2);
-  opacity: 0.5;
-}
-
-.card-info{
+.card-info {
   margin-top: 15px;
   margin-left: 15px;
   position: relative;
@@ -597,10 +584,9 @@ a {
   font-size: 2rem;
 }
 
-
 /*contact section*/
 
-.contact-me{
+.contact-me {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -608,32 +594,33 @@ a {
   background: var(--clr-light);
 }
 
-.title__contact{
+.title__contact {
   margin-bottom: 0.25em;
 }
 
-form{
+form {
   width: 90%;
   max-width: 1000px;
   margin: 30px;
 }
 
-.row{
+.row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.row .input-group{
+.row .input-group {
   flex-basis: 48%;
 }
 
-.input-group{
+.input-group {
   margin-bottom: 45px;
   position: relative;
 }
 
-input, textarea{
+input,
+textarea {
   width: 100%;
   padding: 10px;
   color: var(--clr-dark);
@@ -641,7 +628,7 @@ input, textarea{
   background: transparent;
 }
 
-label{
+label {
   height: 100%;
   position: absolute;
   left: 0;
@@ -652,15 +639,13 @@ label{
   transition: 0.2s;
 }
 
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label{
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
   top: -41px;
   font-size: 17px;
 }
-
-
 
 .submit-btn {
   display: block;
@@ -685,7 +670,7 @@ textarea:valid~label{
 input[type="text"],
 input[type="email"],
 button[type="submit"],
-textarea{
+textarea {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
@@ -735,7 +720,6 @@ textarea{
   padding: 0.5em;
 }
 
-
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
@@ -777,7 +761,6 @@ textarea{
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   display: inline-block;
-
 }
 
 .about-me {
@@ -821,7 +804,3 @@ textarea{
     z-index: 2;
   }
 }
-
-    
-
-
